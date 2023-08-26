@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>explore my HTML table</title>
+    <link rel="stylesheet" href="style/nav.css">
     <style>
         table{
             border-collapse: collapse;
@@ -15,7 +16,27 @@
     </style>
 </head>
 <body>
-    <h1>HTML table</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li>
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="table.html">Table</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>HTML table</h1>
     <table>
         <caption>Employee salary data</caption>
        <thead>
@@ -72,6 +93,7 @@
         <li>for table head: th</li>
         <li>caption</li>
     </ul>
+    </main>
     
 </body>
 </html>
